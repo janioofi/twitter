@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-escura: #15202B;
+    --cor-clara: #28A6FB;
+
+    --font-padrao: sans-serif;
+    --fonte-perso: 'Montserrat', cursive;
+    --fonte-perso2: 'Rubik', cursive;
+}
+
+body{
+    background-color: var(--cor-escura);
+    margin: 0;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+    width: 300px;
+    align-items: center;
+}
+
+.twitter-wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.pai{
+    position:relative; 
+    object-fit: cover;
+    height: 100vh;
+    width: 732px;
+    display: block;
+ 
+}
+
+.filho{
+    display: block;
+    max-width: 100vh;
+    position:absolute; 
+    object-fit: cover;
+    left: 20%;
+    bottom: 30%;
+    filter: grayscale(100%);
+}
+
+.direita{
+    margin-left: 35px;
+    
+}
+
+.logo-direita{
+    height:40px;
+    width: 40px;
+    
+}
+
+h1{
+    font-size: 2.8em;
+    font-family: var(--fonte-perso);
+    color: white;
+}
+
+h2{
+    font-family: var(--fonte-perso);
+    color: white;
+}
+
+h3{
+    color: white;
+    font-size: 1em;
+    font-family: var(--fonte-perso2);
+    font-weight: 600;
+}
+
+button{
+    border: none;
+    width: 290px;
+    height: 40px;
+    border-radius: 40px;
+    transition: .5s;
+    padding: 7px;
+    margin: 4px;
+    font-family: var(--fonte-perso2);
+    font-weight: 500;
+    color: black;
+}
+
+.btn-entrar{
+    color: white;
+    border: 10px #333;    
+    background-color: transparent;
+}
+
+.btn-entrar:hover{
+    background-color: #28a7fb33;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn-email{
+    background-color: var(--cor-clara);
+    color: white;
+}
+
+.btn-email:hover{
+    cursor: pointer;
+    background-color: #28a7fbbd;
+}
+
+.container a{
+    font-family: var(--fonte-perso2);
+    text-decoration: none;
+    color: var(--cor-clara);
+}
+
+.container a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container p{
+    color: #738AA2;
+}
+
+.info{
+    font-size: 10px;
+    
+}
+
+fieldset {
+    border-top: 1px solid #333;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+fieldset legend {
+    padding: 5px;
+}
+
+p{
+    font-family: var(--fonte-perso2);
+}
+    
+footer p{
+    margin-top: 19px;
+    color: #738AA2;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+footer a{
+    border-top: px;
+    text-decoration: none;
+    margin: 5px;
+    color: #738AA2;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
